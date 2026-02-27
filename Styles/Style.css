@@ -1,0 +1,27 @@
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: auto;
+
+    
+}
+nav ul li {
+    border: 1px solid black;
+}
+.menu-item{
+    padding: 15px;
+    background-color: aqua;
+}
+header{
+    border: 1px solid black;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.menu-item:nth-child(3){
+    margin-right: 15px;
+}
