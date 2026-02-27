@@ -22,6 +22,9 @@ header{
     left: 0;
     bottom: 0;
 }
-.menu-item:nth-child(3){
+.menu-item:last-child{
     margin-right: 15px;
+}
+header{
+    background-color: brown;
 }
