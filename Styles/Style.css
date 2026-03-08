@@ -1,4 +1,48 @@
+/*Aquesta es la tipografia de la pagina*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*Definicio variables*/
+:root {
+    /*Colors*/
+    --color-fons-item: aqua;
+    --color-fons-titol: #3247c8;
+    --color-titol-principal: #ffc200;
+    --color-menu-enllaç-hover: red;
+    --color-fons-menu: brown;
+    /*Tamany titols*/
+    --tamany-titol-principal: 3rem;
+    --tamany-titol-h2: 2.4rem;
+    --tamany-titol-h2: 2rem;
+    --tamany-titol-h3: 2rem;
+    --tamany-titol-h4: 1.6rem;
+    --tamany-titol-h5: 1.3rem;
+    --tamany-titol-h6: 1.1rem;
+    /*Textos normal*/
+    --tamany-text: 1rem;
+
+}
+/*Tamany textos aplicat*/
+p, a {
+    font-size: var(--tamany-text);
+}
+h1 {
+    font-size: var(--tamany-titol-principal);
+}
+h2 {
+    font-size: var(--tamany-titol-h2);
+}
+h3 {
+    font-size: var(--tamany-titol-h3);
+}
+h4 {
+    font-size: var(--tamany-titol-h4);
+}
+h5 {
+    font-size: var(--tamany-titol-h5);
+}
+h6 {
+    font-size: var(--tamany-titol-h6);
+}
+
 html{
     font-family: 'Open Sans', sans-serif;
 }
@@ -7,7 +51,7 @@ body{
 }
 .menu-item{
     padding: 15px;
-    background-color: aqua;
+    background-color: var(--color-fons-item);
     border: 1px solid black;
 }
 
@@ -15,14 +59,13 @@ body{
     margin-right: 15px;
 }
 nav{
-    background-color: brown;
+    background-color: var(--color-fons-menu);
         border: 1px solid black;
         top: 0px;
         position: sticky;
 }
-.fotoslider{
-    width: 100%;
-}
+
+/*Aquests son els estils del menu */
 .menu-container{
     display: flex;
     flex-direction: row;
@@ -32,8 +75,9 @@ nav{
     margin-right: auto;
 }
 .icons-logout:hover, a:hover {
-    color: red;
+    color: var(--color-menu-enllaç-hover);
 }
+/*Definim la posicio i els estils de la foto gran del principi*/
 .slider{
       position: relative;
 }
@@ -46,20 +90,39 @@ nav{
     flex-direction: column;
     justify-content: center;
     }
+.fotoslider{
+    width: 100%;
+}
 .paragrafcentrat h1{
     border: 1px solid black;
-    color: #ffc200;
-    background-color: #3247c8;
+    color: var(--color-titol-principal);
+    background-color: var(--color-fons-titol);
     padding: 5px 10px;
     margin: 0;
+    font-weight: bold;
+    font-size: var(--tamany-titol-principal);
 }
-.paragrafcentrat h2{
-    color: #ffc200;
+.paragrafcentrat p{
+    color: var(--color-titol-principal);
     margin: 5px 0 0 0;
-    background-color: #3247c8;
+    background-color: var(--color-fons-titol);
     border: 1px solid black;
     padding: 5px 10px;
+    font-weight: bold;
 }
 .info{
     margin: 20px 0 0 300px;
+}
+.chatbot{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+
+}
+.chatbot{
+    background-color: rgb(203, 203, 40);
 }
