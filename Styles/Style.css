@@ -20,6 +20,13 @@
     --tamany-text: 1rem;
 
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+
+}
 /*Tamany textos aplicat*/
 p, a {
     font-size: var(--tamany-text);
@@ -115,14 +122,29 @@ nav{
 }
 .chatbot{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2%;
+    right: 2%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     z-index: 1000;
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
 
 }
 .chatbot{
     background-color: rgb(203, 203, 40);
+}
+/*Estils seccio nosaltres*/
+.nosaltres-info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+.nosaltres-info img{
+    width: 40%;
+    height: auto;
+
 }
