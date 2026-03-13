@@ -68,12 +68,14 @@ body{
 nav{
     background-color: var(--color-fons-menu);
         border: 1px solid black;
-        top: 0px;
+        top: 0;
         position: sticky;
+        z-index: 2000;
 }
 
 /*Aquests son els estils del menu */
 .menu-container{
+    position: sticky;
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -91,12 +93,10 @@ nav{
 }
     .paragrafcentrat{
     position: absolute;
-    top: 0;
+    top: 550px;
     left: 12px;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
     }
 .fotoslider{
     width: 100%;
@@ -156,4 +156,15 @@ nav{
     border: 1px solid black;
     padding: 10px;
     background-color: aqua;
+}
+.infonosaltres img{
+    border-radius: 10px;
+}
+/*Estils seccio menu*/
+.menu-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
 }
