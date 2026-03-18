@@ -190,6 +190,7 @@ nav{
     border: 1px solid black;
     margin: 0px 20px 0px 0px; 
     text-align: center;
+    border-radius: 10px;
 }
 /*Columna dreta*/
 .el h3{
@@ -274,4 +275,111 @@ nav{
 /* Aparece al pasar el mouse */
 .foto:hover .overlay2 {
     opacity: 100%;
+}
+/*estils galeria*/
+.titolgaleria {
+    margin: 20px 50px 20px 50px;
+}
+.galeria-container .fila1 .fila2 {
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 10px;
+
+}
+.Galeria {
+    width: 25%;
+    border: 1px solid gray;
+    padding: 5px;
+    
+    
+}
+.Galeria:hover{
+    border-radius: 10px;
+    border: 1px solid rgba(12, 148, 118, 0.562);
+}
+.fila1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px 0px 10px 0px;
+}
+.fila2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.fila1 img:nth-child(1){
+    filter: brightness(25%) ;
+}
+.fila1 img:nth-child(4){
+    filter: brightness(25%) ;
+}
+.fila2 img:nth-child(1){
+    filter: brightness(25%) ;
+}
+.fila2 img:nth-child(4){
+    filter: brightness(25%) ;
+}
+/*Estils formulari*/
+.form-container{
+    display: flex;       
+    gap: 20px;             
+    justify-content: center;
+    margin-top: 20px;
+}
+.fila {
+    display: flex;         /* coloca las columnas lado a lado */
+    gap: 20px;             /* espacio entre columnas */
+    margin-bottom: 15px;   /* espacio entre filas */
+}
+
+.columna {
+    display: flex;
+    flex-direction: column; /* apila label encima del input */
+    gap: 5px;               /* espacio entre label e input */
+    flex: 1;                /* para que todas las columnas tengan el mismo ancho */
+}
+input {
+    padding: 15px;
+}
+label{
+    display: block;
+    margin: 0px 0px 5px 0px;
+}
+.columna label input{
+    gap: 10px;
+}
+textarea {
+    width: 100%;        
+    box-sizing: border-box; 
+    padding: 8px;       
+
+}
+button{
+   display: block;
+   margin-left: auto;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   padding: 5px;
+}
+/*Estils footer*/
+svg{
+  fill: red; /* Cambia color fácilmente */
+  width: 48px;
+  height: 48px;
+  margin: 0px 0px 0px 10px;
+}
+.info-container{
+        display: flex;
+    flex-direction: row;
+    gap: 5px;               
+        align-items: center;
+}
+.dalt {
+    display: flex;
+    margin-left: auto;
 }
