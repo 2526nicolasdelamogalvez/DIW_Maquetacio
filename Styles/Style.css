@@ -161,10 +161,75 @@ nav{
     border-radius: 10px;
 }
 /*Estils seccio menu*/
-.menu-info-container{
-    display: flex;
-    flex-direction: row;
+.menu-info-container h2{
+    display: grid;
     justify-content: center;
     border: 1px solid black;
     border-radius: 10px;
+    padding: 15px;
+}
+.container-menu{
+    display:  grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 15px;
+    grid-template-areas: "el el2"
+                         "el3 el2"
+    ;
+    
+
+}
+
+.el{
+    grid-area: el;
+
+}
+.el2{
+    grid-area: el2;    
+}
+.el3{
+    grid-area: el3;
+    margin-top: 20px;
+    
+}
+.mostra {
+    width: 50%;
+    display: block;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;               /* se pone al fondo de la imagen */
+    left: 0;
+    width: 100%;             /* ocupa todo el ancho de la imagen */
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;         /* un poco de espacio arriba y abajo */
+    text-align: center;      /* centra el texto horizontalmente */
+    opacity: 0;              /* empieza invisible */
+    transition: 0.5s ease;   /* efecto de aparición */
+}
+/*Efecte hover menu*/
+.container {
+    position: relative;
+    display: inline-block;
+}
+/* Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;                 /* se coloca al fondo de la imagen */
+    left: 0;
+    width: 50%;               /* solo el ancho de la imagen */
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+/* Aparece al pasar el mouse */
+.container:hover .overlay {
+    opacity: 100%;
 }
