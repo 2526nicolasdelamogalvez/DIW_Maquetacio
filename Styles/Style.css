@@ -149,6 +149,7 @@ nav{
     height: 50%;
 
 }
+/*Estils  caixa*/
 .infonosaltres{
     display: flex;
     flex-direction: row;
@@ -168,46 +169,74 @@ nav{
     border-radius: 10px;
     padding: 15px;
 }
+/*Contenidor amb tot el grid de la seccio*/
 .container-menu{
     display:  grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto auto;
     row-gap: 15px;
-    grid-template-areas: "el el2"
-                         "el3 el2"
-    ;
-    
-
+    column-gap: 10px;
+    grid-template-areas: "el el2 el2"
+                         
+                ;
 }
 
+/*Columna esquerra*/
 .el{
     grid-area: el;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 0px 20px 0px 0px; 
+    text-align: center;
+}
+/*Columna dreta*/
+.el h3{
+    top: 200px;
 }
 .el2{
     grid-area: el2;    
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+}
+.el2 .container{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 5px;
+    row-gap: 10px;
 }
 .el3{
     grid-area: el3;
     margin-top: 20px;
     
 }
+.foto {
+    position: relative;
+    display: inline-block;
+    margin: 0px 10px 0px 0px ;
+}
+
 .mostra {
-    width: 50%;
+    width: 100%;
     display: block;
 }
-.overlay {
+/*Estils overlays*/
+/*primer*/
+.overlay1 {
     position: absolute;
-    bottom: 0;               /* se pone al fondo de la imagen */
+    bottom: 0;               
     left: 0;
-    width: 100%;             /* ocupa todo el ancho de la imagen */
+    width: 100%;             
     background: rgba(0,0,0,0.5);
     color: white;
     font-size: 20px;
-    padding: 10px 0;         /* un poco de espacio arriba y abajo */
-    text-align: center;      /* centra el texto horizontalmente */
-    opacity: 0;              /* empieza invisible */
-    transition: 0.5s ease;   /* efecto de aparición */
+    padding: 10px 0;         
+    text-align: center;      
+    opacity: 0;              
+    transition: 0.5s ease;   
+    margin: 0;
 }
 /*Efecte hover menu*/
 .container {
@@ -215,21 +244,34 @@ nav{
     display: inline-block;
 }
 /* Overlay */
-.overlay {
+
+/* Aparece al pasar el mouse */
+.foto:hover .overlay1 {
+    opacity: 100%;
+}
+/*Segon*/
+.overlay2 {
     position: absolute;
-    bottom: 0;                 /* se coloca al fondo de la imagen */
+    bottom: 0;               
     left: 0;
-    width: 50%;               /* solo el ancho de la imagen */
+    width: 100%;             
     background: rgba(0,0,0,0.5);
     color: white;
     font-size: 20px;
-    padding: 10px 0;
-    text-align: center;
-    opacity: 0;
-    transition: 0.5s ease;
+    padding: 10px 0;         
+    text-align: center;      
+    opacity: 0;              
+    transition: 0.5s ease;   
+    margin: 0;
 }
+/*Efecte hover menu*/
+.container {
+    position: relative;
+    display: inline-block;
+}
+/* Overlay */
 
 /* Aparece al pasar el mouse */
-.container:hover .overlay {
+.foto:hover .overlay2 {
     opacity: 100%;
 }
