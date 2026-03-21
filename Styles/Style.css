@@ -280,7 +280,7 @@ nav{
 .Galeria:hover{
     border-radius: 10px;
     border: 1px solid rgba(12, 148, 118, 0.562);
-    opacity: 1.0;
+    opacity: 0.3;
 }
 .fila1{
 
