@@ -260,10 +260,6 @@ nav{
     margin: 0;
 }
 /*Efecte hover menu*/
-.container {
-    position: relative;
-    display: inline-block;
-}
 /* Overlay */
 
 /* Aparece al pasar el mouse */
@@ -273,13 +269,6 @@ nav{
 /*estils galeria*/
 .titolgaleria {
     margin: 20px 50px 20px 50px;
-}
- .fila1, .fila2 {
-    margin: 0px 50px;
-    display: flex;
-    justify-content: center; 
-    gap: 10px;
-
 }
 .Galeria {
     width: 25%;
@@ -291,7 +280,7 @@ nav{
 .Galeria:hover{
     border-radius: 10px;
     border: 1px solid rgba(12, 148, 118, 0.562);
-    opacity: 0.50;
+    opacity: 1.0;
 }
 .fila1{
 
@@ -299,6 +288,7 @@ nav{
 }
 
 .fila1, .fila2 {
+    margin: 0px 50px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -308,7 +298,7 @@ nav{
 .fila1 img:nth-child(4),
 .fila2 img:nth-child(1),
 .fila2 img:nth-child(4){
-    opacity: 0.10;
+    opacity: 0.3;
 }
 /*Estils formulari*/
 .form-container{
