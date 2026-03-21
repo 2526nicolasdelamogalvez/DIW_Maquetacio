@@ -11,7 +11,6 @@
     /*Tamany titols*/
     --tamany-titol-principal: 3rem;
     --tamany-titol-h2: 2.4rem;
-    --tamany-titol-h2: 2rem;
     --tamany-titol-h3: 2rem;
     --tamany-titol-h4: 1.6rem;
     --tamany-titol-h5: 1.3rem;
@@ -142,11 +141,11 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    margin-top: 20px;
+    margin: 20px 0px 0px 0px
 }
 .nosaltres-info img{
     width: 40%;
-    height: 50%;
+
 
 }
 /*Estils  caixa*/
@@ -172,13 +171,10 @@ nav{
 /*Contenidor amb tot el grid de la seccio*/
 .container-menu{
     display:  grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto auto;
-    row-gap: 15px;
-    column-gap: 10px;
-    grid-template-areas: "el el2 el2"
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: "el el2 el2";
+    gap: 15px;
                          
-                ;
 }
 
 /*Columna esquerra*/
@@ -188,14 +184,12 @@ nav{
     flex-direction: column;
     justify-content: center;
     border: 1px solid black;
-    margin: 0px 20px 0px 0px; 
+    margin: 0px 20px 30px 0px; 
     text-align: center;
     border-radius: 10px;
 }
 /*Columna dreta*/
-.el h3{
-    top: 200px;
-}
+
 .el2{
     grid-area: el2;    
     display: grid;
@@ -210,7 +204,7 @@ nav{
 }
 .el3{
     grid-area: el3;
-    margin-top: 20px;
+    margin: 20px 0px 0px 0px;
     
 }
 .foto {
@@ -245,7 +239,7 @@ nav{
     display: inline-block;
 }
 /* Overlay */
-
+ 
 /* Aparece al pasar el mouse */
 .foto:hover .overlay1 {
     opacity: 100%;
@@ -280,11 +274,10 @@ nav{
 .titolgaleria {
     margin: 20px 50px 20px 50px;
 }
-.galeria-container .fila1 .fila2 {
+ .fila1, .fila2 {
     margin: 0px 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
+    justify-content: center; 
     gap: 10px;
 
 }
@@ -298,50 +291,43 @@ nav{
 .Galeria:hover{
     border-radius: 10px;
     border: 1px solid rgba(12, 148, 118, 0.562);
+    opacity: 0.50;
 }
 .fila1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
+
     margin: 0px 0px 10px 0px;
 }
-.fila2{
+
+.fila1, .fila2 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 10px;
+
 }
-.fila1 img:nth-child(1){
-    filter: brightness(25%) ;
-}
-.fila1 img:nth-child(4){
-    filter: brightness(25%) ;
-}
-.fila2 img:nth-child(1){
-    filter: brightness(25%) ;
-}
+.fila1 img:nth-child(1),
+.fila1 img:nth-child(4),
+.fila2 img:nth-child(1),
 .fila2 img:nth-child(4){
-    filter: brightness(25%) ;
+    opacity: 0.10;
 }
 /*Estils formulari*/
 .form-container{
     display: flex;       
     gap: 20px;             
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px 0px 0px 0px
 }
 .fila {
-    display: flex;         /* coloca las columnas lado a lado */
-    gap: 20px;             /* espacio entre columnas */
-    margin-bottom: 15px;   /* espacio entre filas */
+    display: flex;         
+    gap: 20px;             
+    margin: 0px 0px 15px 0px;
 }
 
 .columna {
     display: flex;
-    flex-direction: column; /* apila label encima del input */
-    gap: 5px;               /* espacio entre label e input */
-    flex: 1;                /* para que todas las columnas tengan el mismo ancho */
+    flex-direction: column; 
+    gap: 5px;               
+    flex: 1;               
 }
 input {
     padding: 15px;
@@ -361,14 +347,19 @@ textarea {
 }
 button{
    display: block;
-   margin-left: auto;
-   margin-top: 5px;
-   margin-bottom: 5px;
-   padding: 5px;
+   margin: 5px 0px 0px auto;
+   padding: 10px;
+   align-items: flex-end;
+   border-radius: 20px;
+   background-color: aqua;
+}
+button:hover{
+    background-color: brown;
 }
 /*Estils footer*/
+/*Sense aixo no puc canviar de color el SVG*/
 svg{
-  fill: red; /* Cambia color fácilmente */
+  fill: red;
   width: 48px;
   height: 48px;
   margin: 0px 0px 0px 10px;
@@ -382,4 +373,8 @@ svg{
 .dalt {
     display: flex;
     margin-left: auto;
+}
+/*Estils pagina confirmat*/
+.textconfirmat{
+    text-align: center;
 }
