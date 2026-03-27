@@ -271,10 +271,11 @@ nav{
     margin: 20px 50px 20px 50px;
 }
 .Galeria {
-    width: 25%;
+    width: 20%;
     border: 1px solid gray;
     padding: 5px;
     margin: 10px 0px 0px 0px;
+    min-width: 200px;
     
 }
 .Galeria:hover{
@@ -292,6 +293,7 @@ nav{
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 
 }
 .fila1 img:nth-child(1),
@@ -367,4 +369,49 @@ svg{
 /*Estils pagina confirmat*/
 .textconfirmat{
     text-align: center;
+}
+/*Media querys activitat 10*/
+/*Amplada 576px*/
+@media(max-width: 576px){
+    /*Estils menu*/
+    .menu-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item{
+        width: 50%;
+        text-align: center;
+    }
+    .menu-item:nth-child(3){
+        margin: 0;
+    }
+    /*Text gran slider fora*/
+    .paragrafcentrat{
+        display: none;
+    }
+    /*Chatbot FORA*/
+    .chatbot{
+        display: none;
+    }
+    /*Aliniem el footer*/
+    .info-container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    /*SVG footer dreta fora*/
+    .dalt{
+        display: none;
+    }
+    .info-container a {
+        margin: 0px 0px 0px 10px;
+    }
+    /*canvis formulari*/
+    .form-container{
+        button{
+            margin: 15px auto 15px auto;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+
 }
