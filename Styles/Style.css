@@ -271,10 +271,11 @@ nav{
     margin: 20px 50px 20px 50px;
 }
 .Galeria {
-    width: 25%;
+    width: 20%;
     border: 1px solid gray;
     padding: 5px;
     margin: 10px 0px 0px 0px;
+    min-width: 200px;
     
 }
 .Galeria:hover{
@@ -285,6 +286,7 @@ nav{
 .fila1{
 
     margin: 0px 0px 10px 0px;
+
 }
 
 .fila1, .fila2 {
@@ -292,6 +294,7 @@ nav{
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 
 }
 .fila1 img:nth-child(1),
