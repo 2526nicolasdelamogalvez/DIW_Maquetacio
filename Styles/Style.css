@@ -451,4 +451,8 @@ svg{
     .Galeria{
         width: 100%;
     }
+    .el{
+        margin: 10px 0px;
+        padding: 15px;
+    }
 }
