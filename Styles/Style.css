@@ -456,3 +456,48 @@ svg{
         padding: 15px;
     }
 }
+@media(max-width: 768px){
+    /*Estils menu superior*/
+    .menu-container{
+        justify-content: center;
+    }
+    /*Estils text slider*/
+    .paragrafcentrat{
+        top: 250px;
+        left: 100px;
+    }
+    /*treiem chatbot*/
+    .chatbot{
+        display: none;
+    }
+    /*Estils seccio sobre nosaltres*/
+    /*Dalt*/
+    .infonosaltres:nth-child(1){
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+    }
+        .infonosaltres img:nth-child(1){
+            width: 100%;
+    }
+    /*Baix*/
+    .infonosaltres:nth-child(2){
+        flex-direction: row-reverse;
+        background-color: transparent;
+        border: none;
+    }
+    /*Estils seccio menu*/
+    .el2 .container{
+        grid-auto-flow: row;
+    }
+    /*Estils footer*/
+    .dalt{
+        display: none;
+    }
+    .info-container{
+        justify-content: center;
+    }
+    /*Estils formulari*/
+
+}
