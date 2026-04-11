@@ -281,7 +281,7 @@ nav{
 .Galeria:hover{
     border-radius: 10px;
     border: 1px solid rgba(12, 148, 118, 0.562);
-    opacity: 0.3;
+  /*  opacity: 0.3; */
 }
 .fila1{
 
@@ -296,11 +296,28 @@ nav{
     flex-wrap: wrap;
 
 }
+/*
 .fila1 img:nth-child(1),
 .fila1 img:nth-child(4),
 .fila2 img:nth-child(1),
 .fila2 img:nth-child(4){
     opacity: 0.3;
+}
+*/
+
+/*Transicions galeria*/
+.fila1, .fila2 img:hover {
+    overflow: hidden;
+}
+/*Estat inicial*/
+.fila1 img{
+    transition: transform 0.5s ease-in-out, 
+              filter 0.5s ease-in-out;
+}
+/*Transicio*/
+.fila1 img:hover{
+    transform: scale(1.2) rotate(5deg);
+    filter: grayscale(100%);
 }
 /*Estils formulari*/
 .form-container{
