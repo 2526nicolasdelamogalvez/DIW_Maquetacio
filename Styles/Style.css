@@ -415,17 +415,17 @@ svg{
     }
     /*Canvis seccio sobre nosaltres*/
     .infonosaltres {
-        flex-direction: column;
+        flex-direction: row-reverse;
         align-items: center;
         background-color: transparent;
         border: none;
+        flex-direction: column-reverse;
+        background-color: red;
     }
     .infonosaltres img {
         width: 100%;
     }
-    .infonosaltres:nth-child(2){
-        flex-direction: column-reverse;
-    }
+
     .infonosaltres p {
         border: 1px solid black;
         padding: 15px;
@@ -442,7 +442,7 @@ svg{
         ;
     }
     .el2 .container{
-    display: grid;
+    
     grid-auto-flow: row;
     column-gap: 5px;
     row-gap: 10px;
@@ -499,5 +499,12 @@ svg{
         justify-content: center;
     }
     /*Estils formulari*/
+    .form-container{
+        button {
+            margin: 15px auto 15px auto;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
 
 }
