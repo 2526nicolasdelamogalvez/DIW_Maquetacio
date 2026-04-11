@@ -371,91 +371,7 @@ svg{
     text-align: center;
 }
 /*Media querys activitat 10*/
-/*Amplada 576px*/
-@media(max-width: 576px){
-    /*Estils menu*/
-    .menu-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .menu-item{
-        width: 50%;
-        text-align: center;
-    }
-    .menu-item:nth-child(3){
-        margin: 0;
-    }
-    /*Text gran slider fora*/
-    .paragrafcentrat{
-        display: none;
-    }
-    /*Chatbot FORA*/
-    .chatbot{
-        display: none;
-    }
-    /*Aliniem el footer*/
-    .info-container{
-        flex-direction: row;
-        justify-content: center;
-    }
-    /*SVG footer dreta fora*/
-    .dalt{
-        display: none;
-    }
-    .info-container a {
-        margin: 0px 0px 0px 10px;
-    }
-    /*canvis formulari*/
-    .form-container{
-        button{
-            margin: 15px auto 15px auto;
-            width: 100%;
-            border-radius: 0;
-        }
-    }
-    /*Canvis seccio sobre nosaltres*/
-    .infonosaltres {
-        flex-direction: row-reverse;
-        align-items: center;
-        background-color: transparent;
-        border: none;
-        flex-direction: column-reverse;
-        background-color: red;
-    }
-    .infonosaltres img {
-        width: 100%;
-    }
-
-    .infonosaltres p {
-        border: 1px solid black;
-        padding: 15px;
-        background-color: aqua;
-    }
-    /*Canvis seccio menu*/
-    .menu-info-container{
-        display: none;
-    }
-    .container-menu{
-        grid-template-columns: 1fr;
-        grid-template-areas: "el"
-                             "el2"
-        ;
-    }
-    .el2 .container{
-    
-    grid-auto-flow: row;
-    column-gap: 5px;
-    row-gap: 10px;
-}
-    /*Canvis galeria*/
-    .Galeria{
-        width: 100%;
-    }
-    .el{
-        margin: 10px 0px;
-        padding: 15px;
-    }
-}
+/*Amplada 768px*/
 @media(max-width: 768px){
     /*Estils menu superior*/
     .menu-container{
@@ -466,10 +382,7 @@ svg{
         top: 250px;
         left: 100px;
     }
-    /*treiem chatbot*/
-    .chatbot{
-        display: none;
-    }
+
     /*Estils seccio sobre nosaltres*/
     /*Dalt*/
     .infonosaltres:nth-child(1){
@@ -507,4 +420,85 @@ svg{
         }
     }
 
+}
+/*Amplada 576px*/
+@media(max-width: 576px){
+    /*Estils menu*/
+    .menu-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item{
+        width: 50%;
+        text-align: center;
+    }
+    .menu-item:nth-child(3){
+        margin: 0;
+    }
+    /*Text gran slider fora*/
+    .paragrafcentrat{
+        display: none;
+    }
+
+    /*Aliniem el footer*/
+    .info-container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    /*SVG footer dreta fora*/
+    .dalt{
+        display: none;
+    }
+    .info-container a {
+        margin: 0px 0px 0px 10px;
+    }
+    /*canvis formulari*/
+    .form-container{
+        button{
+            margin: 15px auto 15px auto;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    /*Canvis seccio sobre nosaltres*/
+    .infonosaltres:nth-child(2) {
+        flex-direction: column-reverse;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+       
+    }
+    .infonosaltres img {
+        width: 100%;
+    }
+
+    .infonosaltres p {
+        border: 1px solid black;
+        padding: 15px;
+        background-color: aqua;
+    }
+    /*Canvis seccio menu*/
+    .menu-info-container{
+        display: none;
+    }
+    .container-menu{
+        grid-template-columns: 1fr;
+        grid-template-areas: "el"
+                             "el2"
+        ;
+    }
+    .el2 .container{
+    
+    grid-auto-flow: row;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+    /*Canvis galeria*/
+    .Galeria{
+        width: 100%;
+    }
+    .el{
+        margin: 10px 0px;
+        padding: 15px;
+    }
 }
