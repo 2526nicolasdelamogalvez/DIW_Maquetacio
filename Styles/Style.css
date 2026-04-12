@@ -306,19 +306,22 @@ nav{
 */
 
 /*Transicions galeria*/
-.fila1, .fila2 img:hover {
+
+.fila1  {
     overflow: hidden;
 }
 /*Estat inicial*/
 .fila1 img{
-    transition: transform 0.5s ease-in-out, 
+    transition: transform 0.5s ease-in-out,  
               filter 0.5s ease-in-out;
 }
 /*Transicio*/
-.fila1 img:hover{
-    transform: scale(1.2) rotate(5deg);
+ .Galeria:hover{ 
+    transform: scale(1.2) rotate(45deg);
     filter: grayscale(100%);
 }
+
+
 /*Estils formulari*/
 .form-container{
     display: flex;       
