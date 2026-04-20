@@ -95,6 +95,9 @@ nav{
     top: 550px;
     left: 12px;
     height: 100%;
+            animation-name: apareix;
+        animation-duration: 10s;
+        animation-direction: forwards;
 
     }
 .fotoslider{
@@ -317,7 +320,7 @@ nav{
 }
 /*Transicio*/
  .Galeria:hover{ 
-    transform: scale(2) rotate(45deg);
+    transform: scale(0.9) rotate(3deg);
     filter: grayscale(100%);
 }
 /*transicions enllaços menu*/
@@ -328,24 +331,24 @@ nav{
 }
 /*Animacio*/
 .menu-item:hover{
-        transform: scale(5) rotate(1deg);
+        transform: scale(0.5) rotate(2deg);
     filter: grayscale(100%);
 }
 /*Estils video restaurant*/
 .videor{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: block;
     width: 100%;
     height: 100%;
 }
 .controlvideo{
-      position: fixed;
+  position: absolute;
   bottom: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+  box-sizing: border-box;
 }
 /*Estils formulari*/
 .form-container{
@@ -416,8 +419,29 @@ footer svg{
     text-align: center;
 }
 /*Estils seccio restaurant*/
+.vrestaurant{
+    position: relative;
+}
 .vrestaurant svg{
-    fill: black;
+    fill: white;
+}
+.vrestaurant svg:hover{
+    fill: red;
+}
+/*Animacio text slider*/
+@keyframes apareix {
+    0%{
+        background-color: orange;
+        top: 200px;
+        opacity: 0;
+    }
+
+    100%{
+        background-color: white;
+        top: 50px;
+        opacity: 1;
+    }
+
 }
 /*Media querys activitat 10*/
 /*Amplada 768px*/
@@ -430,6 +454,7 @@ footer svg{
     .paragrafcentrat{
         top: 250px;
         left: 100px;
+
     }
 
     /*Estils seccio sobre nosaltres*/
