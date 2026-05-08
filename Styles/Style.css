@@ -94,7 +94,6 @@ nav{
     position: absolute;
     top: 550px;
     left: 12px;
-    height: 100%;
             animation-name: apareix;
         animation-duration: 10s;
         animation-direction: forwards;
@@ -273,6 +272,7 @@ nav{
 .titolgaleria {
     margin: 20px 50px 20px 50px;
 }
+
 .Galeria {
     width: 20%;
     border: 1px solid gray;
@@ -281,6 +281,12 @@ nav{
     min-width: 200px;
     
 }
+
+.Galeria img {
+    width: 100%;
+    display: block;
+}
+
 .Galeria:hover{
     border-radius: 10px;
     border: 1px solid rgba(12, 148, 118, 0.562);
@@ -310,17 +316,17 @@ nav{
 
 /*Transicions galeria*/
 
-.fila1  {
+.galeria-container div  {
     overflow: hidden;
 }
 /*Estat inicial*/
-.fila1 img{
+.galeria-container div img{
     transition: transform 0.5s ease-in-out,  
               filter 0.5s ease-in-out;
 }
 /*Transicio*/
- .Galeria:hover{ 
-    transform: scale(0.9) rotate(3deg);
+ .galeria-container div img:hover{ 
+    transform: scale(1.5) rotate(3deg);
     filter: grayscale(100%);
 }
 /*transicions enllaços menu*/
@@ -342,13 +348,28 @@ nav{
 }
 .controlvideo{
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+    justify-content: flex-end;
+}
+.galeria-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.controlvideo svg:hover{
+    box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.4);
+
+    border: none;
 }
 /*Estils formulari*/
 .form-container{
@@ -427,6 +448,10 @@ footer svg{
 }
 .vrestaurant svg:hover{
     fill: red;
+}
+/*Estils seccio video */
+.video-container{
+    position: relative;
 }
 /*Animacio text slider*/
 @keyframes apareix {
