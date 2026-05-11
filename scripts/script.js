@@ -1,10 +1,10 @@
-// Agafem els ID de l'index
+// Agafem els ID de l'HTML per a poder manipular-los amb JavaScript
 var video = document.getElementById("videorestaurant");
 var btnPlay = document.getElementById("btnPlay");
 var btnPause = document.getElementById("btnPause");
 var volumeUp = document.getElementById("volumeUp");
 var volumeOff = document.getElementById("volumeOff");
-var nav = document.getElementById("nav"); // ← afegeix aquesta línia
+var nav = document.getElementById("nav"); 
 
 //Boto play
 btnPlay.addEventListener("click", function() {
@@ -38,8 +38,15 @@ function manageScroll(){
         nav.style.padding = "20px 10px";
         nav.style.backgroundColor = "brown"; // ← color inicial
     }
+    playVideo();
     console.log(posBody, posDoc);
 }
-function play(){
-    
+//Funcio per a que el video es reprodueixi quan arribem a la seccio del video
+function playVideo() {
+    if(posBody > 3457 || posDoc > 3457){
+        video.play();
+    }
+    else{
+        video.pause();
+    }
 }
