@@ -334,7 +334,8 @@ nav{
     transform: scale(1.5) rotate(3deg);
     filter: grayscale(100%);
 }
-/*transicions enllaços menu*/
+/* EXERCICI 1.2 - Transició lliure: s'aplica als items del menu de navegació
+   Utilitza 3 propietats: transform (scale), transform (rotate) i filter (grayscale) */
 /*Estat inicial*/
 .menu-item {
        transition: transform 0.5s ease-in-out,  

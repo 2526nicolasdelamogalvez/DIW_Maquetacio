@@ -32,11 +32,11 @@ function manageScroll(){
 
     if(posBody > 80 || posDoc > 80){
         nav.style.padding = "5px 10px";
-        nav.style.backgroundColor = "red"; // ← color quan fem scroll
+        nav.style.backgroundColor = "red"; // color quan fem scroll
     }
     else{
         nav.style.padding = "20px 10px";
-        nav.style.backgroundColor = "brown"; // ← color inicial
+        nav.style.backgroundColor = "brown"; // color inicial
     }
     playVideo();
     console.log(posBody, posDoc);
