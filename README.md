@@ -125,5 +125,5 @@ Tots els canvis d'aquesta pràctica s'han desenvolupat a la branca **`multimedia
  
 ## 👤 Autor
  
-Nicolás de Lamo — 2526  
+Nicolás Del Amo Gálvez — 2526  
 [2526_nicolas.delamo@iticbcn.cat](mailto:2526_nicolas.delamo@iticbcn.cat)
